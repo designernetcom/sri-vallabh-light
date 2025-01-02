@@ -624,7 +624,9 @@ img {
 .sec-title .sub-title{
   position: relative;
   display: inline-block;
+  color: white;
   font-size: 12px;
+  border: 1px solid;
   line-height: 20px;
   font-family: var(--text-font);
   font-weight: 600;
@@ -1624,7 +1626,7 @@ button.ltr {
 }
 
 .dark_home{
-  background: #06180a;
+  /* background: #06180a; */
 }
 
 .boxed_wrapper.home_5{
@@ -1859,7 +1861,7 @@ button.ltr {
   }
 }
 .widget-content p {
-  color: #e0e0e0;
+  color: #ffffff
 }
 .widget-content i {
   margin-right: 5px;
@@ -1925,4 +1927,10 @@ button.ltr {
       display: none;
   }
 
+}
+.reviews-sec .sec-title .sub-title:after  {
+  opacity: 1;
+}
+.reviews-sec .sec-title .sub-title  {
+ color: #ffc31e;
 }

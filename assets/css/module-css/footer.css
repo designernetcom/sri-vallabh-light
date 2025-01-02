@@ -33,7 +33,7 @@
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .main-footer .links-widget .links-list li a:hover{
@@ -145,6 +145,7 @@
 .footer-bottom{
   position: relative;
   padding: 15px 0px;
+  background: #0d4c2a;
 }
 
 .footer-bottom .bottom-inner{

@@ -110,7 +110,7 @@
 
 .trading-style-two{
   position: relative;
-  background: #0d4c2a;
+  background: #9fcc47;
 }
 
 .project-tab .p-tab {
@@ -473,7 +473,7 @@
   float: left;
   width: 25%;
   text-align: center;
-  padding: 15px 30px;
+  padding: 15px 20px;
   cursor: pointer;
   transition: all 500ms ease;
 }

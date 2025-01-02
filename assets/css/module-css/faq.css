@@ -27,6 +27,7 @@
   border-radius: 15px;
   padding: 16px 50px 16px 30px;
   cursor: pointer;
+  background: white;
 }
 
 .faq-section .accordion-box .accordion .acc-btn.active{
@@ -37,7 +38,7 @@
   font-size: 22px;
   line-height: 30px;
   font-weight: 500;
-  color: white;
+  color: #0d4c2a;
   transition: all 500ms ease;
 }
 
@@ -50,7 +51,7 @@
   top: 28px;
   right: 30px;
   font-size: 6px;
-  color: #d6d6d6;
+  color: #114f2e;
   transition: all 500ms ease;
 }
 
