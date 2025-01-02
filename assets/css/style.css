@@ -359,7 +359,7 @@ img {
 .theme-btn.btn-two{
   background: transparent;
   border: 1px solid #fff;
-  padding: 9px 40px;
+  padding: 9px 30px;
 }
 
 .theme-btn.btn-two:before,
@@ -1873,6 +1873,9 @@ button.ltr {
 .links1 {
   padding-left: 0px;
 }
+.pb_50 {
+  padding-bottom: 30px;
+}
 .form-column {
   margin-top: 10px;
 }
@@ -1898,21 +1901,21 @@ button.ltr {
   font-style: italic;
 }
 .modal-title {
-  font-size: 25px !important;
+  font-size: 30px !important;
 }
 .callus {
   position: fixed;
   bottom: 0;
   z-index: 11111111;
-  background: #fff;
-  padding: 10px;
+  background: #0d4c2a;
+  padding: 12px;
   width: 100%;
   border-top: solid 2px #dddddd;
 }
 
 .callus a {
-  font-size: 22px;
-  color: #0d4c2a;
+  font-size: 20px;
+  color: #fff;
 }
 
 .callus .fa-phone {
@@ -1920,7 +1923,7 @@ button.ltr {
 }
 
 .callus .fa-whatsapp {
-  color: #13a048;
+  /* color: #13a048; */
 }
 @media screen and (min-width: 600px) {
   .callus {
@@ -1934,3 +1937,7 @@ button.ltr {
 .reviews-sec .sec-title .sub-title  {
  color: #ffc31e;
 }
+.borderr {
+  border-right: 1px solid white;
+}
+.bantext

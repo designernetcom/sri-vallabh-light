@@ -355,7 +355,7 @@
 .trading-style-three .trading-lists li{
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 400px;
   margin-right: 10px;
 }
 
@@ -1191,7 +1191,7 @@
   }
 
   .trading-style-four{
-    padding: 70px 0px;
+    padding: 50px 0px;
   }
 
   .trading-style-five{
@@ -1233,8 +1233,21 @@
 
 @media only screen and (max-width: 599px){
   .trading-style-four .tab-btns li{
-    width: 100%;
+    width: 50%;
   }
+
+  .trading-style-four .tab-btns li h4 {
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #0d4c2a !important;
+    transition: all 500ms ease;
+}
+.trading-style-four .tab-btns li {
+padding: 15px 5px;
+}
+}
 
   .trading-style-four .tabs-content{
     padding-left: 30px;

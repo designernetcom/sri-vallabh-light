@@ -403,14 +403,18 @@
 }
 
 .content_block_six .content-box h2{
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 45px;
+  line-height: 60px;
   /* font-weight: 700; */
   margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .content_block_six .content-box h2 span{
-  display: block;
+  border-left: 15px solid #ff9400;
+  padding-left: 20px;
 }
 
 .content_block_six .content-box p{
@@ -471,7 +475,7 @@
 .banner-style-four .image-box{
   position: relative;
   display: block;
-  margin-left: 125px;
+  /* margin-left: 125px; */
 }
 
 .banner-style-four .image-box img{
@@ -718,6 +722,17 @@
     padding: 200px 0px 150px 0px;
   }
 
+  .content_block_six .content-box h2 span {
+    border-left: 10px solid #ff9400;
+    padding-left: 20px;
+}
+.header-style-two .header-lower .outer-box {
+  background: #fff;
+  border-radius: 10px;
+  padding-left: 10px;
+  position: fixed;
+  width: 100%;
+}
   .banner-style-two .shape{
     background-size: cover;
     background-position: center;
@@ -730,6 +745,8 @@
   .content_block_six .content-box h2{
     font-size: 40px;
     line-height: 50px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .banner-style-five .banner-carousel .slide-item{
