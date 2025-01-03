@@ -11,6 +11,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
+  position: relative;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+
+
+  -webkit-align-items: center;
+
 }
 
 .header-top{
