@@ -790,6 +790,7 @@ div#mCSB_1_container{
 
 .header-style-two .header-top{
   background:#12502e;
+  display: none;
 }
 
 .main-header .info-list{

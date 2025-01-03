@@ -57,8 +57,8 @@
   position: relative;
   display: block;
   padding-left: 20px;
-  border-left: solid;
-  border-width: 2px;
+  /* border-left: solid; */
+  /* border-width: 2px; */
 }
 
 .experience-section .inner-box .single-item h2{
