@@ -725,6 +725,7 @@
   .content_block_six .content-box h2 span {
     border-left: 10px solid #ff9400;
     padding-left: 20px;
+    margin-left: 15px;
 }
 .header-style-two .header-lower .outer-box {
   background: #fff;

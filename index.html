@@ -279,7 +279,7 @@
                                             Consistently <br>
                                             Independently</span>
                                     </h2>
-                                    <p>Join our proven training program to trade confidently, manage risks effectively,
+                                    <p>Join our proven stock market training programs to trade confidently, manage risks effectively,
                                         and achieve consistent profits—tailored for achieving Financial Freedom.
                                     </p>
                                     <div class="btn-box">
@@ -1440,12 +1440,20 @@
                     </ul>
                 </div>
             </section>
+
+            <div class="btn-box text-center revbox">
+                <a href="https://www.youtube.com/@rajeshoswal3726"
+                    class="theme-btn btn-two">Check more reviews</a>
+            </div>
         </div>
         <!-- banner-style-four end -->
         <div class="container scroll-container text-center">
             <div class="row justify-content-center">
                 <div class="scroll">Scroll Down 👇👇
-                    And See Why Our Students Are So Happy With Our Stock Market Training Programs</div>
+                    And See Why Our Students Are So Happy With Our Stock Market Training Programs
+                
+                   </div>
+                    
             </div>
         </div>
         
@@ -1718,7 +1726,7 @@
 
             <div class="auto-container">
                 <div class="sec-title light pb_50 centred">
-                    <span class="sub-title mb_14">FAQS</span>
+                    
                     <h2>Benefits of Our Stock Market Training Program</h2>
                 </div>
 
@@ -1817,7 +1825,7 @@
         <section class="markets-section centred pt_50 pb_70 reviews-sec" id="courses">
             <div class="auto-container">
                 <div class="sec-title pb_50">
-                    <span class="sub-title mb_14">Our Range</span>
+                    
                     <h2>Our Courses</h2>
                 </div>
                 <div class="three-item-carousel owl-carousel owl-theme owl-nav-none ">
@@ -2096,7 +2104,7 @@
                                     <p> Rahul Jain, an MBA in Finance from IBS-Mumbai, brings 24 years of financial
                                         market
                                         experience and 12 years of teaching expertise. </p>
-                                    <p> Known for his practical approach, , he simplifies complex trading concepts,
+                                    <p> Known for his practical approach, he simplifies complex trading concepts,
                                         enabling
                                         students to trade confidently and achieve consistent profits independently. </p>
 
@@ -2132,7 +2140,7 @@
                         <div class="content-box">
                             <div class="sec-title light pb_30">
                                 <span class="sub-title mb_14">Experience</span>
-                                <h2>Trade Confidently, Achieve Freedom</h2>
+                                <h2>Start Your Journey to Financial Freedom NOW!</h2>
                             </div>
                             
 
@@ -2278,6 +2286,9 @@
                                                 <li><a href="#courses">Courses</a></li>
                                                 <li><a href="#about">About Us</a></li>
                                                 <li><a href="#contact">Contact</a></li>
+                                                <li><a href="https://srivallabhinvestment.com/gdpr-privacy-policy.html">Privacy Policy</a></li>
+                                                <li><a href="https://srivallabhinvestment.com/terms-and-condition.html">Terms and Conditions</a></li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -2422,6 +2433,25 @@
         </div>
     </div>
 
+    <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: #0d4c2a; color: #fff; padding: 10px 20px; z-index: 9999; display: none; font-size: 14px;">
+        <p style="margin: 0; display: inline-block;">We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies. 
+            <a href="/privacy-policy" style="color: #0af;">Learn more</a>
+        </p>
+        <button id="acceptCookies" style="margin-left: 20px; background: #0af; border: none; color: #fff; padding: 5px 10px; cursor: pointer;">Accept</button>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("cookieConsent")) {
+                document.getElementById("cookieConsent").style.display = "block";
+            }
+    
+            document.getElementById("acceptCookies").addEventListener("click", function () {
+                localStorage.setItem("cookieConsent", "true");
+                document.getElementById("cookieConsent").style.display = "none";
+            });
+        });
+    </script>
 
     <!-- jequery plugins -->
     <script src="assets/js/jquery.js"></script>

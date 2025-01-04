@@ -614,7 +614,7 @@ img {
   display: block;
   font-size: 45px;
   line-height: 55px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .sec-title.light h2{
@@ -1917,7 +1917,7 @@ button.ltr {
   position: fixed;
   bottom: 0;
   z-index: 11111111;
-  background: #0d4c2a;
+  background: #ffbb00;
   padding: 12px;
   width: 100%;
   border-top: solid 2px #dddddd;
@@ -1977,7 +1977,7 @@ button.ltr {
   font-weight: 700;
 }
 .scroll {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   border: 3px solid #ffc31e;
   padding: 30px 0px;
@@ -1988,4 +1988,16 @@ button.ltr {
   padding: 0px 15px;
   margin: 0px auto;
   width: 90%;
+}
+.revbox .theme-btn {
+  background: #ffbb00;
+  margin-top: 25px;
+  padding: 9px 20px;
+}
+#cookieConsent {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#cookieConsent a {
+  text-decoration: underline;
 }

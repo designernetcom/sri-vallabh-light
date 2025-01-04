@@ -585,6 +585,7 @@
 		handlePreloader();
 		enableMasonry();
 	});
+	
 
 	
 
