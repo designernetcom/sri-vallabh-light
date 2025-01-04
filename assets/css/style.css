@@ -634,6 +634,7 @@ img {
   border-radius: 40px;
   text-transform: uppercase;
   z-index: 1;
+  display: none;
 }
 
 .sec-title .sub-title:before{
@@ -1626,7 +1627,7 @@ button.ltr {
 }
 
 .dark_home{
-  background: #fafff4;
+  background: #ffffff;
 }
 
 .boxed_wrapper.home_5{
@@ -1917,7 +1918,7 @@ button.ltr {
   position: fixed;
   bottom: 0;
   z-index: 11111111;
-  background: #ffbb00;
+  background: #ffffff;
   padding: 12px;
   width: 100%;
   border-top: solid 2px #dddddd;
@@ -1978,9 +1979,10 @@ button.ltr {
 }
 .scroll {
   font-size: 24px;
+  line-height: 34px;
   font-weight: 500;
   border: 3px solid #ffc31e;
-  padding: 30px 0px;
+  padding: 30px 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
@@ -1993,6 +1995,7 @@ button.ltr {
   background: #ffbb00;
   margin-top: 25px;
   padding: 9px 20px;
+  font-size: 18px;
 }
 #cookieConsent {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
@@ -2000,4 +2003,24 @@ button.ltr {
 }
 #cookieConsent a {
   text-decoration: underline;
+}
+#cookieConsent p {
+color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 600px) {
+#cookieConsent {
+  bottom: 50px !important;
+}
+}
+.revbox p {
+  font-size: 22px;
+  color: #3f3f3f;
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .rrow {
+    flex-direction: column-reverse;
+  }
 }

@@ -126,26 +126,48 @@
 
 
 	//Tabs Box
-	if($('.tabs-box').length){
-		$('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
+	if ($('.tabs-box').length) {
+		const tabsBox = $('.tabs-box');
+		const tabs = tabsBox.find('.tab');
+		const tabBtns = tabsBox.find('.tab-btn');
+		let currentIndex = 0;
+		let autoSwitch;
+	
+		// Function to switch to a specific tab
+		function switchToTab(index) {
+			tabBtns.removeClass('active-btn').attr('aria-selected', 'false');
+			tabs.hide().removeClass('active-tab').attr('aria-hidden', 'true');
+	
+			$(tabBtns[index]).addClass('active-btn').attr('aria-selected', 'true');
+			$(tabs[index]).fadeIn(100).addClass('active-tab').attr('aria-hidden', 'false');
+		}
+	
+		// Function to start automatic switching
+		function startAutoSwitch() {
+			autoSwitch = setInterval(() => {
+				currentIndex = (currentIndex + 1) % tabs.length; // Cycle through tabs
+				switchToTab(currentIndex);
+			}, 3000); // 3000ms = 3 seconds
+		}
+	
+		// Function to stop automatic switching
+		function stopAutoSwitch() {
+			clearInterval(autoSwitch);
+		}
+	
+		// Manual tab click handler
+		tabBtns.on('click', function (e) {
 			e.preventDefault();
-			var target = $($(this).attr('data-tab'));
-			
-			if ($(target).is(':visible')){
-				return false;
-			}else{
-				target.parents('.tabs-box').find('.tab-buttons').find('.tab-btn').removeClass('active-btn');
-				$(this).addClass('active-btn');
-				target.parents('.tabs-box').find('.tabs-content').find('.tab').fadeOut(0);
-				target.parents('.tabs-box').find('.tabs-content').find('.tab').removeClass('active-tab');
-				$(target).fadeIn(100);
-				$(target).addClass('active-tab');
-			}
+			stopAutoSwitch(); // Pause auto-switching on user interaction
+			currentIndex = tabBtns.index(this); // Update index based on clicked tab
+			switchToTab(currentIndex);
+			startAutoSwitch(); // Resume auto-switching
 		});
+	
+		// Start automatic switching on page load
+		startAutoSwitch();
 	}
-
-
-
+	
 	//Accordion Box
 	if($('.accordion-box').length){
 		$(".accordion-box").on('click', '.acc-btn', function() {
